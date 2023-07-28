@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.mjs",
+        "src": "*.mjs",
         "use": "@vercel/node"
       }
     ],
@@ -10,7 +10,7 @@
       
       {
         "src": "/(.*)",
-        "dest": "/server.mjs"
+        "dest": "/"
       }
     ]
   }
